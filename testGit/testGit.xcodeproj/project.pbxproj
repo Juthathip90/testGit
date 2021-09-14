@@ -15,6 +15,7 @@
 		B5B8CCD326F094C60057422D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B8CCD126F094C60057422D /* LaunchScreen.storyboard */; };
 		B5B8CCDE26F094C70057422D /* testGitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8CCDD26F094C70057422D /* testGitTests.swift */; };
 		B5B8CCE926F094C70057422D /* testGitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8CCE826F094C70057422D /* testGitUITests.swift */; };
+		B5B8CCFA26F0A2590057422D /* Pentest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8CCF926F0A2590057422D /* Pentest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B5B8CCE426F094C70057422D /* testGitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testGitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B8CCE826F094C70057422D /* testGitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testGitUITests.swift; sourceTree = "<group>"; };
 		B5B8CCEA26F094C70057422D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B8CCF926F0A2590057422D /* Pentest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pentest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B5B8CCC626F094C30057422D /* AppDelegate.swift */,
 				B5B8CCC826F094C30057422D /* SceneDelegate.swift */,
 				B5B8CCCA26F094C30057422D /* ViewController.swift */,
+				B5B8CCF926F0A2590057422D /* Pentest.swift */,
 				B5B8CCCC26F094C30057422D /* Main.storyboard */,
 				B5B8CCCF26F094C60057422D /* Assets.xcassets */,
 				B5B8CCD126F094C60057422D /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				B5B8CCCB26F094C30057422D /* ViewController.swift in Sources */,
 				B5B8CCC726F094C30057422D /* AppDelegate.swift in Sources */,
 				B5B8CCC926F094C30057422D /* SceneDelegate.swift in Sources */,
+				B5B8CCFA26F0A2590057422D /* Pentest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
