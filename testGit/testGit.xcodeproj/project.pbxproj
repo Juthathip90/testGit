@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243E22D4CC859D4DE2F4B5CA /* Pods_testGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61391C1887080D05B71AF5F3 /* Pods_testGit.framework */; };
 		B5B8CCC726F094C30057422D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8CCC626F094C30057422D /* AppDelegate.swift */; };
 		B5B8CCC926F094C30057422D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8CCC826F094C30057422D /* SceneDelegate.swift */; };
 		B5B8CCCB26F094C30057422D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8CCCA26F094C30057422D /* ViewController.swift */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61391C1887080D05B71AF5F3 /* Pods_testGit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testGit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67462CF059E9825819BC9B5D /* Pods-testGit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testGit.release.xcconfig"; path = "Target Support Files/Pods-testGit/Pods-testGit.release.xcconfig"; sourceTree = "<group>"; };
+		8A55418124C5AB753F5A95C2 /* Pods-testGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testGit.debug.xcconfig"; path = "Target Support Files/Pods-testGit/Pods-testGit.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B8CCC326F094C30057422D /* testGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B8CCC626F094C30057422D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B8CCC826F094C30057422D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243E22D4CC859D4DE2F4B5CA /* Pods_testGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				B5B8CCDC26F094C70057422D /* testGitTests */,
 				B5B8CCE726F094C70057422D /* testGitUITests */,
 				B5B8CCC426F094C30057422D /* Products */,
+				C772E99A4CFAB6540EA89461 /* Pods */,
+				E5B52B5AED6EB1285F804B8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +135,24 @@
 			path = testGitUITests;
 			sourceTree = "<group>";
 		};
+		C772E99A4CFAB6540EA89461 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A55418124C5AB753F5A95C2 /* Pods-testGit.debug.xcconfig */,
+				67462CF059E9825819BC9B5D /* Pods-testGit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E5B52B5AED6EB1285F804B8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61391C1887080D05B71AF5F3 /* Pods_testGit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5B8CCED26F094C70057422D /* Build configuration list for PBXNativeTarget "testGit" */;
 			buildPhases = (
+				7FDB4BB57D7CA0ACBE29BD76 /* [CP] Check Pods Manifest.lock */,
 				B5B8CCBF26F094C30057422D /* Sources */,
 				B5B8CCC026F094C30057422D /* Frameworks */,
 				B5B8CCC126F094C30057422D /* Resources */,
+				E35421EEDCD861DF218BAF0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FDB4BB57D7CA0ACBE29BD76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testGit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E35421EEDCD861DF218BAF0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testGit/Pods-testGit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testGit/Pods-testGit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testGit/Pods-testGit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5B8CCBF26F094C30057422D /* Sources */ = {
@@ -433,6 +502,7 @@
 		};
 		B5B8CCEE26F094C70057422D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A55418124C5AB753F5A95C2 /* Pods-testGit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +522,7 @@
 		};
 		B5B8CCEF26F094C70057422D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67462CF059E9825819BC9B5D /* Pods-testGit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
