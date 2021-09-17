@@ -15,7 +15,8 @@ class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fsCalendar.scrollDirection = .vertical
+        fsCalendar.scrollDirection = .horizontal
+        fsCalendar.scope = .month
         fsCalendar.delegate = self
         fsCalendar.dataSource = self
         
